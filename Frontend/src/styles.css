@@ -1,0 +1,106 @@
+/* You can add global styles to this file, and also import other style files */
+
+/* Generales */
+
+body{
+    background-color: #181A1B;
+    color: white !important;
+}
+
+main{
+    height: 77vh;
+}
+
+footer{
+    background-color: #242729;
+    margin-top: 60px;
+}
+
+/* Espesificos */
+
+#frase1{
+    color: gray;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+    margin-top: 90px; 
+}
+
+#slogan{
+    font-size: 40px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+#parteSlogan{
+    color: red;
+}
+
+#fraseEmpresa{
+    margin-top: -10px;
+    color: grey;
+    font-size: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-align: center;
+}
+
+#btns{
+    text-align: center;
+    justify-content: center;
+    display: flex;
+    gap: 10px;
+}
+
+#btnAllGift, #btnTopGift{
+    background-color: white;
+    color: black;
+    text-align: center;
+    gap: 10px;
+    width: 150px;
+}
+
+#gifts{
+    font-size: 30px;
+    margin-top: 70px;
+}
+
+#tablacategorias{
+    display: grid;
+    gap: 10px;
+}
+
+#tablacategorias a{
+    background-color: white;
+    color: black;
+    width: 120px;
+}
+
+#imgCampo{
+    margin-top: 5%;
+    width: 50%;
+    height: 300px;
+}
+
+.imagenHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+@media screen and (max-width: 576px) {
+    #imgEntregaRegalo{
+        width: 100%;
+        height: 230px;
+    }
+
+    #tablacategorias{
+        display: flex;
+        justify-content: center;
+    }
+
+    #TituloTablaRegalos{
+        justify-content: center;
+        text-align: center;
+    }
+}

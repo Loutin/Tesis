@@ -1,0 +1,64 @@
+main{
+    height: 85vh;
+}
+
+figure{
+    display: flex;
+    justify-content: center;
+}
+
+.row{
+    --bs-gutter-x: none;
+}
+
+#imgLogin{
+    width: 400px;
+    height: 610px;
+    margin-top: 20px;
+}
+
+.formulario{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+h3{
+    height: 50px;
+    width: 60%;
+    text-align: center;
+    border: 1px solid white;
+    margin-top: 10%;
+}
+
+#Formulariogap{
+    margin-top: 40px;
+    
+   
+}
+
+input{
+    border-style: solid;
+    border-width: 0 0 0.1em;
+    box-shadow: 0;
+    background: transparent;
+    color: aliceblue;
+}
+
+.spaceform{
+    margin-top: 20px;
+}
+
+#btnsContinue{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+#btnLogueo{
+    margin-left: 20%;
+    margin-top: 20px;
+}

@@ -1,0 +1,51 @@
+#IconoCarrito{
+    margin-left: 10px;
+    color: aliceblue;
+    text-decoration: none;
+}
+
+nav{
+    background-color: #181A1B;
+    color: white !important;
+}
+
+header{
+    margin-left: 30px !important;
+}
+/* Tags espesificos */
+
+.navbar-brand {
+    color: var(--darkreader-text--bs-navbar-brand-color);
+    margin-left: 10px !important;
+}
+
+.navbar{
+    --bs-navbar-brand-hover-color: none;
+}
+
+.navbar-nav .nav-link.active, .navbar-nav .nav-link.show {
+    color: var(--darkreader-text--bs-navbar-active-color);
+}
+
+.nav-link:focus, .nav-link:hover {
+    color: var(--darkreader-text--bs-nav-link-hover-color);
+}
+
+.nav-link {
+    color: var(--darkreader-text--bs-nav-link-color);
+    text-decoration-color: initial;
+    background-image: initial;
+    background-color: initial;
+    border-color: initial;
+}
+
+#MargenLogin{
+    margin-left: 10px !important;
+}
+
+@media screen and (max-width: 992px) {
+    #MargenLogin{
+        margin-left: 0px !important;
+    }
+    
+}

@@ -1,0 +1,15 @@
+<app-nav></app-nav>
+
+<main>
+    <div id="categorias" class="container-fluid">
+        <a class="btn btn-primary" [routerLink]="['/servicios/stock']">Stock</a>
+        <a class="btn btn-primary" [routerLink]="['/servicios/actividades']">Actividades</a>
+        <a class="btn btn-primary" [routerLink]="['/servicios/animales']">Animales</a>
+        <a class="btn btn-primary" [routerLink]="['/servicios/medicamentos']">Medicamentos</a>
+    </div>
+    <div>
+        <router-outlet></router-outlet>
+    </div>
+</main>
+
+<app-footer></app-footer>

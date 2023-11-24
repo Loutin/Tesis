@@ -1,0 +1,29 @@
+#LogoFooter{
+    display: flex;
+}
+
+#LogoFooter h5{
+    width: 70px; 
+    margin-left: 10px;
+}
+
+.BarraFooter{
+    display: grid;
+    gap: 10px;
+    margin-top: 5px;
+}
+
+.Copyright{
+    text-decoration: none;
+    background-color: #181A1B;
+}
+
+@media screen and (max-width: 992px) {
+    #LogoFooter{
+        justify-content: center;
+    } 
+    
+    .NosotrosyContacto{
+        margin-top: 20px;
+    }
+}

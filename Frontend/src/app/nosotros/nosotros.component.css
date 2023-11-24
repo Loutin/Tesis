@@ -1,0 +1,18 @@
+main{
+    height: 80vh;
+}
+
+#Preguntas{
+    display: flex;
+    flex-direction: column;
+    margin-top: 30px;
+    width: 80%;
+    gap: 30px;
+}
+
+#Preguntas a{
+    background-color: rgb(80, 80, 80);
+    color: black;
+    height: 50px;
+    border-color: rgb(80, 80, 80);
+}
