@@ -1,5 +1,7 @@
 package com.apiTesis.Crud.controllers;
 
+import com.apiTesis.Crud.Requests.AnimalRequest;
+import com.apiTesis.Crud.Requests.ApiResponse;
 import com.apiTesis.Crud.models.AnimalModel;
 import com.apiTesis.Crud.services.AnimalService;
 
@@ -7,6 +9,8 @@ import java.util.ArrayList;
 import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -28,6 +32,20 @@ public class AnimalController {
 	public ArrayList<AnimalModel> getAnimalById() {
 		return this.AnimalService.getAnimalById();
     }
+
+
+    @PostMapping
+    public ResponseEntity<Object> registrarAnimal(@RequestBody AnimalRequest animalRequest) {
+        try {
+            AnimalModel guardarAnimal = AnimalService.registrarAnimal(animalRequest);
+            String mensaje = "Animal registrado correctamente con Caravana: " + guardarAnimal.getCaravana();
+            return ResponseEntity.ok(new ApiResponse("success", mensaje));
+        } catch (Exception e) {
+            String mensaje = "Error al registrar el animal: " + e.getMessage();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body(new ApiResponse("error", mensaje));
+        }
+    }
+
 
     @PostMapping
     public AnimalModel saveAnimalById(@RequestBody AnimalModel animal) {
