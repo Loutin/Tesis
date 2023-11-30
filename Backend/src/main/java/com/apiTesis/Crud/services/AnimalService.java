@@ -56,7 +56,7 @@ public class AnimalService{
         return (ArrayList<AnimalModel>) animalRepository.findAll();
     }
     
-    public AnimalModel saveAnimalById(AnimalModel animal) {
+    public AnimalModel saveAnimalById(AnimalModel animal) {                 // ya esta
         return animalRepository.save(animal);
     }
     

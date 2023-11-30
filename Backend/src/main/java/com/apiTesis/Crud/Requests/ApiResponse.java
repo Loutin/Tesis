@@ -1,6 +1,6 @@
 package com.apiTesis.Crud.Requests;
 
-// Clase simple para representar la respuesta JSON
+// Clase para representar el JSON de respuesta
     public class ApiResponse {
         private final String status;
         private final String message;
